@@ -11,3 +11,4 @@ Plug 'elzr/vim-json'
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
 
+Plug 'tpope/vim-fugitive'
