@@ -2,7 +2,7 @@
 " Configuration goes in the appropriate modules/plugins/*.vim file.
 " So configuration for tmux.vim would go in modules/plugins/tmux.vim.vim
 
-Plug 'Valloric/YouCompleteMe', {'do': 'python3 install.py --ts-completer --clang-completer --java-completer'}
+Plug 'Valloric/YouCompleteMe', {'do': './install.py --ts-completer --clang-completer --java-completer'}
 Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 
 Plug 'pangloss/vim-javascript'
