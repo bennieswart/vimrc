@@ -7,6 +7,7 @@ Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 
 Plug 'pangloss/vim-javascript'
 Plug 'elzr/vim-json'
+Plug 'lifepillar/pgsql.vim', {'do': 'patch -p0 < ../../modules/plugins/vim-pgsql.patch'}
 
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
