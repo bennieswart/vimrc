@@ -26,11 +26,9 @@ set foldlevel=99
 "nnoremap <space> za
 
 " Enable syntax highlighting.
-syntax enable
+syntax on
 
-" Set VIM to 8 color mode - I like how the desert colorscheme displays then.
-set t_Co=8
-colorscheme desert
+colorscheme flash
 set background=dark
 
 " Use spaces instead of tabs.
@@ -103,5 +101,3 @@ highligh BadWhitespace ctermbg=red guibg=darkred
 au BufNewFile,BufRead *.py,*.pyw,*.c,*.h,*.js,*.css match BadWhitespace /\s\+$/
 let python_highlight_all=1
 au BufNewFile,BufRead *.view set filetype=html
-syntax on
-
