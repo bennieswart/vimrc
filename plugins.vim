@@ -16,3 +16,5 @@ Plug 'tpope/vim-fugitive'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 
 Plug 'gerw/vim-HiLinkTrace'
+
+Plug 'ctrlpvim/ctrlp.vim'

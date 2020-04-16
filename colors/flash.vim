@@ -177,7 +177,7 @@ call s:h("Character", { "fg": s:yellow }) " a character constant: 'c', '\n'
 call s:h("Number", { "fg": s:dark_yellow }) " a number constant: 234, 0xff
 call s:h("Boolean", { "fg": s:dark_yellow }) " a boolean constant: TRUE, false
 call s:h("Float", { "fg": s:dark_yellow }) " a floating point constant: 2.3e10
-call s:h("Identifier", { "fg": s:red }) " any variable name
+call s:h("Identifier", { "fg": s:purple }) " any variable name
 call s:h("Function", { "fg": s:cyan }) " function name (also: methods for classes)
 call s:h("Statement", { "fg": s:green }) " any statement
 call s:h("Conditional", { "fg": s:green }) " if, then, else, endif, switch, etc.
@@ -185,9 +185,9 @@ call s:h("Repeat", { "fg": s:green }) " for, do, while, etc.
 call s:h("Label", { "fg": s:green }) " case, default, etc.
 call s:h("Operator", { "fg": s:green }) " sizeof", "+", "*", etc.
 call s:h("Keyword", { "fg": s:green }) " any other keyword
-call s:h("Exception", { "fg": s:purple }) " try, catch, throw
+call s:h("Exception", { "fg": s:green }) " try, catch, throw
 call s:h("PreProc", { "fg": s:yellow }) " generic Preprocessor
-call s:h("Include", { "fg": s:blue }) " preprocessor #include
+call s:h("Include", { "fg": s:purple }) " preprocessor #include
 call s:h("Define", { "fg": s:purple }) " preprocessor #define
 call s:h("Macro", { "fg": s:purple }) " same as Define
 call s:h("PreCondit", { "fg": s:yellow }) " preprocessor #if, #else, #endif, etc.
@@ -195,7 +195,7 @@ call s:h("Type", { "fg": s:yellow }) " int, long, char, etc.
 call s:h("StorageClass", { "fg": s:yellow }) " static, register, volatile, etc.
 call s:h("Structure", { "fg": s:yellow }) " struct, union, enum, etc.
 call s:h("Typedef", { "fg": s:yellow }) " A typedef
-call s:h("Special", { "fg": s:blue }) " any special symbol
+call s:h("Special", { "fg": s:yellow, "cterm": "bold" }) " any special symbol
 call s:h("SpecialChar", {}) " special character in a constant
 call s:h("Tag", {}) " you can use CTRL-] on this
 call s:h("Delimiter", {}) " character that needs attention
@@ -372,7 +372,7 @@ call s:h("jsNull", { "fg": s:dark_yellow })
 call s:h("jsOperator", { "fg": s:green })
 call s:h("jsStorageClass", { "fg": s:green })
 call s:h("jsSuper", { "fg": s:purple })
-call s:h("jsTemplateBraces", { "fg": s:dark_red })
+call s:h("jsTemplateBraces", { "fg": s:yellow, "cterm": "bold" })
 call s:h("jsTemplateVar", { "fg": s:green })
 call s:h("jsThis", { "fg": s:purple })
 call s:h("jsUndefined", { "fg": s:dark_yellow })
