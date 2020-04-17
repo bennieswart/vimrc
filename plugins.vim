@@ -7,14 +7,13 @@ Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 
 Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-css-color'
+Plug 'Yggdroot/indentLine'
+Plug 'gerw/vim-HiLinkTrace'
 
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
+Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'tpope/vim-fugitive'
 
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-
-Plug 'gerw/vim-HiLinkTrace'
-
-Plug 'ctrlpvim/ctrlp.vim'
