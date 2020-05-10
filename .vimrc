@@ -101,3 +101,10 @@ highligh BadWhitespace ctermbg=red guibg=darkred
 au BufNewFile,BufRead *.py,*.pyw,*.c,*.h,*.js,*.css match BadWhitespace /\s\+$/
 let python_highlight_all=1
 au BufNewFile,BufRead *.view set filetype=html
+
+set noshowmode
+set noshowcmd
+set shortmess+=F
+
+set ignorecase
+set smartcase

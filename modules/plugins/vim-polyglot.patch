@@ -1,0 +1,11 @@
+--- ./syntax/pgsql2.vim	2020-05-07 19:04:25.978486155 +0200
++++ ./syntax/pgsql.vim	2020-05-07 19:03:24.644809118 +0200
+@@ -1945,6 +1945,8 @@
+ 
+ syn region plpgsql matchgroup=sqlString start=+\$\z(pgsql\|body\|function\)\$+ end=+\$\z1\$+ keepend
+   \ contains=sqlIsKeyword,sqlIsFunction,sqlComment,sqlPlpgsqlKeyword,sqlPlpgsqlVariable,sqlPlpgsqlOperator,sqlNumber,sqlIsOperator,sqlString,sqlTodo
++syn region plpgsql matchgroup=sqlString start=+\(AS\|DO\)\s\+\$\$+ end=+\$\$+ keepend
++  \ contains=sqlIsKeyword,sqlIsFunction,sqlComment,sqlPlpgsqlKeyword,sqlPlpgsqlVariable,sqlPlpgsqlOperator,sqlNumber,sqlIsOperator,sqlString,sqlTodo
+ if get(g:, 'pgsql_dollar_strings', 0)
+   syn region sqlString start=+\$\$+ end=+\$\$+ contains=@Spell
+ else
