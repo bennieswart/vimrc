@@ -63,10 +63,10 @@ set number
 " Prevent syntax highlighting from going out of sync.
 au Syntax * syntax sync fromstart
 
-au BufWinLeave * silent! mkview
-au BufWinEnter * silent! loadview
-au BufWrite * silent! mkview
-au BufRead * silent! loadview
+" au BufWinLeave * silent! mkview
+" au BufWinEnter * silent! loadview
+" au BufWrite * silent! mkview
+" au BufRead * silent! loadview
 "autocmd BufWrite * mkview
 "autocmd BufRead * silent loadview
 
